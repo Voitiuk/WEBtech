@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кнопка з CSS</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .button {
+            background-color: #4CAF50; /* Зелений фон */
+            color: white; /* Білий текст */
+            border: none; /* Без обрамлення */
+            border-radius: 8px; /* Закруглені кути */
+            padding: 15px 32px; /* Внутрішні відступи */
+            text-align: center; /* Вирівнювання тексту */
+            text-decoration: none; /* Без підкреслення */
+            display: inline-block; /* Відображення як блок */
+            font-size: 16px; /* Розмір шрифту */
+            transition: background-color 0.3s, box-shadow 0.3s; /* Анімація при зміні */
+            cursor: pointer; /* Курсор у вигляді руки */
+        }
+
+        .button:hover {
+            background-color: #45a049; /* Зміна кольору фону при наведенні */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Додавання тіні */
+        }
+
+        .button:active {
+            background-color: #3e8e41; /* Зміна кольору фону при натисканні */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Зменшення тіні при натисканні */
+            transform: translateY(2px); /* Зміщення кнопки вниз */
+        }
+    </style>
+</head>
+<body>
+
+    <button class="button">Натисни мене</button>
+
+</body>
+</html>

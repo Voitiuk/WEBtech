@@ -1,0 +1,72 @@
+// styles.scss
+
+// Змінні
+$primary-color: #4CAF50;
+$secondary-color: #ffffff;
+$font-family: 'Arial, sans-serif';
+$padding: 20px;
+
+// Міксини
+@mixin button-styles {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: $padding;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
+
+// Основні стилі
+body {
+    font-family: $font-family;
+
+    background-image: url('https://png.pngtree.com/png-vector/20210122/ourlarge/pngtree-mobile-phone-design-transparent-background-png-image_2781905.jpg'); // Вкажіть шлях до вашого зображення
+    background-size: cover; // Зробить зображення на весь екран
+    background-position: center; // Центрує зображення
+    background-repeat: no-repeat; // Не повторює зображення
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $secondary-color;
+}
+
+header {
+    h1 {
+        font-size: 2.5em;
+        color: $primary-color;
+        margin: 0;
+    }
+}
+
+.intro {
+    text-align: center;
+    margin: $padding 0;
+
+    h2 {
+        font-size: 2em;
+        color: $primary-color;
+    }
+
+    p {
+        font-size: 1.2em;
+        color: #333;
+    }
+}
+
+.button-container {
+    margin-top: $padding;
+
+    .cta-button {
+        @include button-styles;
+    }
+}

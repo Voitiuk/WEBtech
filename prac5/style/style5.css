@@ -1,0 +1,136 @@
+/* Основні стилі */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('imeg/background-pr5.jpg') no-repeat center center fixed;
+    background-size: cover; /* Зображення займає всю площу */
+}
+
+.planner {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header-row .week-habit input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: 5px;
+    width: 150px;
+}
+
+.check-group {
+    display: flex;
+    gap: 10px;
+}
+
+/* Grid для основного контенту */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+/* Бокова панель */
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+aside h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+aside li input[type="text"] {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+/* Дні тижня */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.day {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.day h3 {
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.day h3 .day-checkbox {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.day textarea {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    resize: none;
+}
+
+/* Базова адаптивність */
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}

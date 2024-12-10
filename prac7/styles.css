@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://static.zara.net/assets/public/e681/c26a/f6504da89e4d/259c1b484a36/08756612745-1-p/08756612745-1-p.jpg?ts=1726227283484&w=824/1920x1080'); /* Замість цього URL вставте URL вашого зображення */
+    background-size: contain; /* Зменшує зображення відповідно до розширення екрану */
+    background-position: center; /* Центрування зображення */
+    background-repeat: no-repeat; /* Відключає повторення зображення */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white; /* Змінюємо колір тексту на білий для кращої видимості */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header__title {
+    font-size: 2.5rem;
+    color: #fff; /* Змінено на білий */
+}
+
+.header__subtitle {
+    font-size: 1.2rem;
+    color: #fff; /* Змінено на білий */
+}
+
+.intro {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон для контрасту */
+    padding: 20px;
+    border-radius: 10px; /* Закруглені кути */
+}
+
+.intro__title {
+    font-size: 2rem;
+    color: #fff; /* Змінено на білий */
+    margin-bottom: 10px;
+}
+
+.intro__description {
+    font-size: 1rem;
+    color: #fff; /* Змінено на білий */
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button--primary:hover {
+    background-color: #0056b3;
+}

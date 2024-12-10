@@ -1,0 +1,53 @@
+body {
+  font-family: "Arial, sans-serif";
+  background-image: url("https://png.pngtree.com/png-vector/20210122/ourlarge/pngtree-mobile-phone-design-transparent-background-png-image_2781905.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #4CAF50;
+  margin: 0;
+}
+
+.intro {
+  text-align: center;
+  margin: 20px 0;
+}
+.intro h2 {
+  font-size: 2em;
+  color: #4CAF50;
+}
+.intro p {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+.button-container .cta-button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+.button-container .cta-button:hover {
+  background-color: rgb(60.5577689243, 139.4422310757, 63.7450199203);
+}
+
+/*# sourceMappingURL=styles.css.map */
